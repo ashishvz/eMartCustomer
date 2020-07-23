@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#8F67DF</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="login_groceries_color">#f7f7f7</color>
+    <color name="login_home_color">#fbe8d4</color>
+    <color name="login_electric_color">#f5a7a7</color>
+    <color name="error_red">#ff0000</color>
+</resources>

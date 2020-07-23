@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "873632671549",
+    "firebase_url": "https://keras-16d8a.firebaseio.com",
+    "project_id": "keras-16d8a",
+    "storage_bucket": "keras-16d8a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873632671549:android:bc5f47916a06595c69c754",
+        "android_client_info": {
+          "package_name": "com.example.testemart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "873632671549-dl4d922jotr8tt76r9klnj928h2g3hgj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.testemart",
+            "certificate_hash": "c880ff41d080012984c7fe5ab62c4ff6a4410d69"
+          }
+        },
+        {
+          "client_id": "873632671549-uds8g0s1hn77hd0spvtrmd8d5ougpg4t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcptyoTH_WCHLFUL0dgB0pjHZjIfYCbao"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "873632671549-uds8g0s1hn77hd0spvtrmd8d5ougpg4t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:maxHeight="200sp"
+    app:cardElevation="5sp"
+    app:cardCornerRadius="8sp"
+    android:layout_margin="5sp"
+    android:minWidth="150sp"
+    android:maxWidth="210sp"
+    android:clickable="true"
+    android:focusable="true"
+    android:fitsSystemWindows="true"
+    android:background="?attr/selectableItemBackgroundBorderless">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5sp"
+        android:layout_gravity="center">
+    <ImageView
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:src="@drawable/rounded_shape"
+        android:layout_gravity="center"
+        android:padding="5sp"
+        android:layout_margin="5sp"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/recent_productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/productname"
+            android:textSize="20sp"
+            android:padding="5sp"
+            android:layout_gravity="center"
+            style="@style/TextAppearance.MaterialComponents.Subtitle2"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:maxLines="1"
+            android:id="@+id/recent_shopName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shopname"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:padding="5sp"
+            style="@style/TextAppearance.MaterialComponents.Subtitle1"/>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

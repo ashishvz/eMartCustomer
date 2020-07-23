@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Spalsh"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/splashimg"
+        android:layout_width="350sp"
+        android:layout_height="100sp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center_horizontal"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tagline"
+        app:fontFamily="@font/caveat_brush"
+        android:textSize="17sp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="145sp"
+        android:layout_height="5sp"
+        android:layout_alignBottom="@id/home_txt"
+        android:background="@drawable/rounded_shape"
+        android:fitsSystemWindows="true" />
+
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        style="?android:progressBarStyleHorizontal"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70sp"
+        android:indeterminateOnly="true"
+        android:indeterminateTint="@color/colorPrimary"
+        android:progressTint="@color/colorPrimary" />
+</LinearLayout>

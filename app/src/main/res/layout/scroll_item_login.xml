@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="350sp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="15sp"
+    app:cardBackgroundColor="#f5a7a7"
+    android:id="@+id/login_card"
+    app:cardCornerRadius="8sp"
+    app:cardElevation="10sp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/login_img"
+        android:layout_width="match_parent"
+        android:layout_height="250sp"
+        android:src="@drawable/electrician"
+        android:scaleType="centerCrop" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/title_txt"
+        android:layout_marginTop="5sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Your groceries at your door step!"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:padding="5sp"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/description_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All at affordable prices at your doorstep"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:padding="5sp"
+            android:layout_margin="5sp"/>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

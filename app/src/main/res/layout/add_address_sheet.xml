@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/order_layout_shape"
+    android:orientation="vertical"
+    android:paddingTop="15sp"
+    app:behavior_hideable="true"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/add_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="5sp"
+            android:text="Add Address"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/close_img_address"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="25sp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="5sp"
+            android:src="@drawable/close_black"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/add_address_scroll">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                app:boxCornerRadiusTopEnd="8sp"
+                app:boxCornerRadiusTopStart="8sp"
+                android:focusable="true"
+                app:errorEnabled="true"
+                app:errorTextColor="@color/error_red"
+                app:boxStrokeErrorColor="@color/error_red"
+                app:errorIconTint="@color/error_red">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/firstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="70sp"
+                    android:hint="@string/first_name"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:textSize="20sp"
+                    android:focusable="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                app:boxCornerRadiusTopEnd="8sp"
+                app:boxCornerRadiusTopStart="8sp"
+                app:errorTextColor="@color/error_red"
+                app:boxStrokeErrorColor="@color/error_red"
+                app:errorIconTint="@color/error_red">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/lastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="70sp"
+                    android:hint="@string/last_name"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="20sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                app:boxCornerRadiusTopEnd="8sp"
+                app:boxCornerRadiusTopStart="8sp"
+                app:errorTextColor="@color/error_red"
+                app:boxStrokeErrorColor="@color/error_red"
+                app:errorIconTint="@color/error_red">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/houseNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="70sp"
+                    android:hint="@string/house_no"
+                    android:inputType="text"
+                    android:textSize="20sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                app:boxCornerRadiusTopEnd="8sp"
+                app:boxCornerRadiusTopStart="8sp"
+                app:errorTextColor="@color/error_red"
+                app:boxStrokeErrorColor="@color/error_red"
+                app:errorIconTint="@color/error_red">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/streetName"
+                    android:layout_width="match_parent"
+                    android:layout_height="70sp"
+                    android:hint="@string/street_name"
+                    android:inputType="textPostalAddress"
+                    android:textSize="20sp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                app:boxCornerRadiusTopEnd="8sp"
+                app:boxCornerRadiusTopStart="8sp"
+                app:errorTextColor="@color/error_red"
+                app:boxStrokeErrorColor="@color/error_red"
+                app:errorIconTint="@color/error_red">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/talukName"
+                    android:layout_width="match_parent"
+                    android:layout_height="70sp"
+                    android:hint="Taluk"
+                    android:inputType="text"
+                    android:textSize="20sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                app:boxCornerRadiusTopEnd="8sp"
+                app:boxCornerRadiusTopStart="8sp"
+                app:errorTextColor="@color/error_red"
+                app:boxStrokeErrorColor="@color/error_red"
+                app:errorIconTint="@color/error_red">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/districtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="70sp"
+                    android:hint="District"
+                    android:inputType="text"
+                    android:textSize="20sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                app:boxCornerRadiusTopEnd="8sp"
+                app:boxCornerRadiusTopStart="8sp"
+                app:errorTextColor="@color/error_red"
+                app:boxStrokeErrorColor="@color/error_red"
+                app:errorIconTint="@color/error_red">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/pincode"
+                    android:layout_width="match_parent"
+                    android:layout_height="70sp"
+                    android:hint="Pin Code"
+                    android:inputType="number"
+                    android:textSize="20sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                app:boxCornerRadiusTopEnd="8sp"
+                app:boxCornerRadiusTopStart="8sp"
+                app:errorTextColor="@color/error_red"
+                app:boxStrokeErrorColor="@color/error_red"
+                app:errorIconTint="@color/error_red">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/state"
+                    android:layout_width="match_parent"
+                    android:layout_height="70sp"
+                    android:hint="State"
+                    android:inputType="text"
+                    android:textSize="20sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/add_address_btn"
+                android:layout_width="match_parent"
+                android:layout_height="70sp"
+                android:layout_margin="15sp"
+                android:text="@string/add_address" />
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>
